@@ -1,4 +1,4 @@
-# Advanced Sample Hardhat Project
+# Fund me Project using hardhat and hardhat-deploy
 
 This project demonstrates an advanced Hardhat use case, integrating other tools commonly used alongside Hardhat in the ecosystem.
 
