@@ -17,6 +17,12 @@ contract FundMe {
     // Type Declarations
     using PriceConverter for uint256;
 
+    /**
+    variable start with s_ are stored in storage
+    variable start with i_ are stored in contract abi
+    constant are stored in contract abi
+     */
+
     // State variables
     uint256 public constant MINIMUM_USD = 50 * 10**18;
     address private immutable i_owner;
@@ -75,6 +81,7 @@ contract FundMe {
         require(success);
     }
 
+    // to save gas.
     function cheaperWithdraw() public payable onlyOwner {
         address[] memory funders = s_funders;
         // mappings can't be in memory, sorry!
